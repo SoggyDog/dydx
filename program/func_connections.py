@@ -38,4 +38,3 @@ def connect_to_dydx():
 
     # Return Client
     return client
-

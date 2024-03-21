@@ -38,7 +38,7 @@ def get_iso_times():
     date_start_3 = date_start_2 - timedelta(hours=100)
     date_start_4 = date_start_3 - timedelta(hours=100)
 
-    # Format datetimes
+    # Format datetime
     time_dict = {
         'range_1': {
             'from_iso': format_time(date_start_1),
