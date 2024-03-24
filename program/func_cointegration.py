@@ -17,7 +17,8 @@ def calculate_half_life(spread):
     spread_lag2 = sm.add_constant(spread_lag)
     model = sm.OLS(spread_ret, spread_lag2)
     res = model.fit()
-    halflife = round(-np.log(2) / res.params[1], 0)
+    #halflife = round(-np.log(2) / res.params[1], 0)
+    halflife = round(-np.log(2) / model.iloc[1], 0)
     return halflife
 
 

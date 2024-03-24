@@ -6,12 +6,12 @@ from func_cointegration import store_cointegration_results
 from func_entry_pairs import open_positions
 from func_exit_pairs import manage_trade_exits
 from func_messaging import send_message
+
 # Main function
 if __name__ == '__main__':
 
-    success = send_message('Testerama')
-    print(success)
-    exit(1)
+    # Message on start
+    send_message('Bot launched successfully!')
 
     # Connect to client
     try:
@@ -19,6 +19,7 @@ if __name__ == '__main__':
         client = connect_to_dydx()
     except Exception as e:
         print('Error connecting to client: ', e)
+        send_message("Failed to connect to client.")
         exit(1)
 
     # Abort all open positions
@@ -29,6 +30,7 @@ if __name__ == '__main__':
 
         except Exception as e:
             print('Error closing all positions: ', e)
+            send_message(f"Error closing all positions.{e}")
             exit(1)
 
     # Find cointegrated pairs
@@ -40,6 +42,7 @@ if __name__ == '__main__':
             df_market_prices = construct_market_prices(client)
         except Exception as e:
             print('Error constructing market prices: ', e)
+            send_message(f"Error constructing market prices {e}")
             exit(1)
 
         # Store Cointegrated pairs
@@ -51,8 +54,9 @@ if __name__ == '__main__':
                 exit(1)
         except Exception as e:
             print('Error storing cointegrated pairs: ', e)
+            send_message(f"Error storing cointegrated pairs {e}")
             exit(1)
-# Run as always on
+    # Run as always on
     while True:
         # Manage Exits
         if MANAGE_EXITS:
@@ -62,6 +66,7 @@ if __name__ == '__main__':
 
             except Exception as e:
                 print('Error managing exit positions...: ', e)
+                send_message(f"Error managing positions {e}")
                 exit(1)
 
         # Place trades for opening positions
@@ -72,4 +77,5 @@ if __name__ == '__main__':
 
             except Exception as e:
                 print('Error trading pairs: ', e)
+                send_message(f"Error trading pairs {e}")
                 exit(1)
