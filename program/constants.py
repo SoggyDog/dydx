@@ -8,7 +8,7 @@ MODE = 'DEVELOPMENT'
 ABORT_AL_POSITIONS = True
 
 # Find Cointegrated Pairs
-FIND_COINTEGRATED = False
+FIND_COINTEGRATED = True
 
 # Place Trades
 PLACE_TRADES = True
