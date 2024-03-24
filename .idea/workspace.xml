@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="469f4d18-4b17-4c91-a366-7047e27d6706" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/bot_agents.json" beforeDir="false" afterPath="$PROJECT_DIR$/program/bot_agents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/cointegrated_pairs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/program/cointegrated_pairs.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/func_bot_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/func_bot_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/func_cointegration.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/func_cointegration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/program/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="469f4d18-4b17-4c91-a366-7047e27d6706" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +84,7 @@
       <workItem from="1710893568071" duration="5984000" />
       <workItem from="1710964900988" duration="20072000" />
       <workItem from="1710986094619" duration="3808000" />
+      <workItem from="1711239150192" duration="829000" />
     </task>
     <servers />
   </component>
